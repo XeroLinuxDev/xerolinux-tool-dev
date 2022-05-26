@@ -1,2 +1,1 @@
-# xerolinux-tool-dev
-XeroLinux Tool Dev Branch
+# xerolinux-tool
