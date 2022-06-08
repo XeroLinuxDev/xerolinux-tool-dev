@@ -1,0 +1,7 @@
+#!/bin/bash
+yad --title "XeroLinux New Tweaks/Fixes Tool" --form --columns=2 --width=480 --height=190 --text="Use this tool apply older Tweaks n Fixes <b>Prior to May 2022.</b>." --image=$HOME/xero.png  \
+--field="<b>Udpate to latest MirrorsList</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/pcmn'" \
+--field="<b>Dolphin Open As Root Patch/Fix</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/dolphroot'" \
+--field="<b>Long Shutdown Patch/Fix</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/shutfix'" \
+--field="<b>Replace Pamac-all with Source</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/rpmc'"  \
+--button=Back:1

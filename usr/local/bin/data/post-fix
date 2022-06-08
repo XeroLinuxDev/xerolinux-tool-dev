@@ -1,0 +1,7 @@
+#!/bin/bash
+yad --title "XeroLinux New Tweaks/Fixes Tool" --form --columns=2 --width=480 --height=190 --text="Use this tool apply latest Tweaks n Fixes. (Subject to change)" --image=$HOME/xero.png  \
+--field="<b>Get New MirrorsList (*)</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/pcmn'" \
+--field="<b>Dolphin Open As Root (*)</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/dolphroot'" \
+--field="<b>Long Shutdown Fix (*)</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/shutfix'" \
+--field="<b>Apply Pamac GUI Fix (*)</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/rpmc'"  \
+--button=Back:1

@@ -1,10 +1,14 @@
 #!/bin/bash
 #set -e
 echo "#################################"
-echo "    Fixing Pacman Architecture   "
+echo "     Updating Mirrorlist Now     "
 echo "#################################"
 echo
-sudo sed -i "s/Architecture = auto/Architecture = x86_64/g" /etc/pacman.conf
+cd /etc/ && sudo rm pacman.conf
+cd /etc/ && sudo wget https://raw.githubusercontent.com/xerolinux/xero-fixes/main/conf/pacman.conf
+sleep 2
+cd /etc/pacman.d/ && sudo rm xero-mirrorlist
+cd /etc/pacman.d/ && sudo wget https://raw.githubusercontent.com/xerolinux/xerolinux-mirrorlist/main/etc/pacman.d/xero-mirrorlist
 sleep 3
 echo "#################################"
 echo "      Updating Done! Exit Me     "
