@@ -1,0 +1,76 @@
+#!/bin/bash
+#set -e
+tput setaf 2
+echo "###############################################################################"
+echo "#                    ArcoLinux Repos & ATT Installer Script                   #"
+echo "#                                                                             #"
+echo "#                     !!! READ BELOW BEFORE RUNNING !!!                       #"
+echo "#                                                                             #"
+echo "# Adding more Repos might introduce package conflicts in case of duplicates ! #"
+echo "#                                                                             #"
+echo "# !! We Recommend that you disable all Repos EXCEPT arcolinux_repo via ATT !! #"
+echo "#                                                                             #"
+echo "#           !!! Report Any Issues on ArcoLinux Discord NOT ours !!!           #"
+echo "###############################################################################"
+tput sgr0
+echo
+echo "Select an Action to Execute"
+echo
+echo "1. Install & Run ArcoLinux Spices Tool"
+echo "2. Install & Run ArchLinux Tweak Tool!"
+echo "3. Nothing/Exit"
+echo
+echo "Type Your Selection..."
+echo
+
+read CHOICE
+
+case $CHOICE in
+
+    1 )
+      echo
+      echo "##########################################"
+      echo "      Installing/Running Spices Tool      "
+      echo "     Press the BIG button to install.     "
+      echo "##########################################"
+			sleep 3
+			sudo pacman -S --noconfirm arcolinux-spices-git
+			sleep 3
+			arcolinux-spices
+      echo "#######################################"
+      echo "All Done, Now Select Step 2 to Continue"
+      echo "#######################################"
+      clear && sh /usr/local/bin/data/arcotoolz
+
+      ;;
+
+    2 )
+      echo
+      echo "##########################################"
+      echo "      Installing/Running Tweak Tool       "
+      echo "##########################################"
+			sleep 3
+			sudo pacman -S --noconfirm archlinux-tweak-tool-git
+			sleep 3
+			archlinux-tweak-tool
+      echo "##########################################"
+      echo "All Done, Run Tool From App Menu Next Time"
+      echo "##########################################"
+
+      ;;
+
+    3 )
+      echo
+      echo "########################################"
+      echo "   We did nothing as per your request   "
+      echo " You can now close this window. Thanks. "
+      echo "########################################"
+      echo
+      ;;
+
+    * )
+      echo "#################################"
+      echo "Choose the correct number"
+      echo "#################################"
+      ;;
+esac
