@@ -1,6 +1,6 @@
 #!/bin/bash
 #set -e
-tput setaf 2
+tput setaf 5
 echo "###############################################################################"
 echo "#                    ArcoLinux Repos & ATT Installer Script                   #"
 echo "#                                                                             #"
@@ -11,14 +11,16 @@ echo "#                                                                         
 echo "# !! We Recommend that you disable all Repos EXCEPT arcolinux_repo via ATT !! #"
 echo "#                                                                             #"
 echo "#           !!! Report Any Issues on ArcoLinux Discord NOT ours !!!           #"
+echo "#   Note : We can't be held responsible in case of misuse of these tools...   #"
 echo "###############################################################################"
 tput sgr0
 echo
 echo "Select an Action to Execute"
 echo
-echo "1. Install & Run ArcoLinux Spices Tool"
-echo "2. Install & Run ArchLinux Tweak Tool!"
-echo "3. Nothing/Exit"
+echo "1. Install/Run ArcoLinux Spices Tool"
+echo "2. Install/Run ArchLinux Tweak Tool"
+echo "3. Report issues on ArcoLinux Server"
+echo "4. Nothing/Exit"
 echo
 echo "Type Your Selection..."
 echo
@@ -34,7 +36,7 @@ case $CHOICE in
       echo "     Press the BIG button to install.     "
       echo "##########################################"
 			sleep 3
-			sudo pacman -S --noconfirm arcolinux-spices-git
+			sudo pacman -Sy --noconfirm arcolinux-spices-git
 			sleep 3
 			arcolinux-spices
       echo "#######################################"
@@ -50,16 +52,31 @@ case $CHOICE in
       echo "      Installing/Running Tweak Tool       "
       echo "##########################################"
 			sleep 3
-			sudo pacman -S --noconfirm archlinux-tweak-tool-git
+			sudo pacman -Sy --noconfirm archlinux-tweak-tool-git
 			sleep 3
 			archlinux-tweak-tool
       echo "##########################################"
       echo "All Done, Run Tool From App Menu Next Time"
       echo "##########################################"
+      sleep 5
 
       ;;
 
     3 )
+      echo
+      echo "##########################################"
+      echo "   Opening Browser To ArcoLinux Discord   "
+      echo "##########################################"
+			sleep 3
+			xdg-open https://discordapp.com/channels/421588918580805642/972085522891673641
+			sleep 3
+      echo "##########################################"
+      echo "         All Done, Close Window           "
+      echo "##########################################"
+
+      ;;
+
+    4 )
       echo
       echo "########################################"
       echo "   We did nothing as per your request   "
