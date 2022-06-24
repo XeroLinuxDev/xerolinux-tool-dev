@@ -124,13 +124,13 @@ case $CHOICE in
         echo
         echo "##########################################"
         echo "          Restoring ISO Defaults          "
-        echo "Careful, This will Undo All Your Settings!"
+        echo "     This Wil Launch The FReset Script    "
         echo "You have 20 seconds to cancel with ctrl+c "
         echo "##########################################"
 			sleep 20
 			sh /usr/local/bin/freset
         echo "#######################################"
-        echo "        Restore Done, Rebooting        "
+        echo "               All Done                "
         echo "#######################################"
 
       ;;
