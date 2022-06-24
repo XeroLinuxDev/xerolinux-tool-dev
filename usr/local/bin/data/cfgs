@@ -1,9 +1,9 @@
 #!/bin/bash
 yad --title "Misc System Configs" --form --columns=2 --width=480 --height=160 --text="Use this to configure your System." --image=/usr/share/icons/scalable/apps/xero.png  \
 --field="<b>Shell Configuration</b>":fbtn '/usr/local/bin/data/shell' \
---field="<b>ArcoLinux Spices/ATT</b>":fbtn "konsole -e sh '/usr/local/bin/data/arcotoolz'" \
+--field="<b>Spices/ArchLinux Tweak Tool</b>":fbtn "konsole -e sh '/usr/local/bin/data/arcotoolz'" \
 --field="<b>Install/Enable Firewall</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/firewalled'" \
---field="<b>Update .bashrc/.zshrc</b>":fbtn '/usr/local/bin/data/shellrcz' \
+--field="<b>Update .bashrc/.zshrc files</b>":fbtn '/usr/local/bin/data/shellrcz' \
 --field="<b>Initialize Snapper (BTRFS)</b>":fbtn "konsole -e sh -c '/usr/local/bin/data/snapcfg'" \
 --field="<b>Install/Enable H-Block</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/hblkaur'" \
 --button=Back:1
