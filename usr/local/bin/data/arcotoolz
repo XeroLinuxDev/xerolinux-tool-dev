@@ -18,7 +18,7 @@ echo
 echo "Select an Action to Execute"
 echo
 echo "1. Install/Run ArcoLinux Spices Tool"
-echo "2. Install/Run ArchLinux Tweak Tool"
+echo "2. Install/Run ArchLinux Tweak Tool (Requires Step 1)"
 echo "3. Report issues on ArcoLinux Server"
 echo "4. Nothing/Exit"
 echo
