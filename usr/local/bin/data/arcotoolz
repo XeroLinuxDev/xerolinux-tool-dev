@@ -2,7 +2,7 @@
 #set -e
 tput setaf 5
 echo "###############################################################################"
-echo "#                    ArcoLinux Repos & ATT Installer Script                   #"
+echo "#            ArcoLinux Spices Tool & ArchLinux Tweak Tool Installer           #"
 echo "#                                                                             #"
 echo "#                     !!! READ BELOW BEFORE RUNNING !!!                       #"
 echo "#                                                                             #"
@@ -19,7 +19,7 @@ echo "Select an Action to Execute"
 echo
 echo "1. Install/Run ArcoLinux Spices Tool"
 echo "2. Install/Run ArchLinux Tweak Tool"
-echo "   (Enable Arco Repos 1st via Spices)"
+echo "   (Enable Arco Repos via Spices 1st)"
 echo "3. Report issues on ArcoLinux Server"
 echo "4. Nothing/Exit"
 echo
