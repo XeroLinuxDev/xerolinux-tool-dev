@@ -6,7 +6,7 @@ echo "#################################"
 echo
 echo " Step 1 - Installing H-Block from AUR "
 echo "######################################"
-paru -S --noconfirm hblock
+yay -S --noconfirm hblock
 sleep 3
 echo
 echo "Step 2 - Enabling H-Block Service Now "

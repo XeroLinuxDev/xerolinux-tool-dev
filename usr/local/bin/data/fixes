@@ -1,5 +1,7 @@
 #!/bin/bash
 yad --title "XeroLinux Common Issue Fixer" --form --columns=2 --width=480 --height=128 --text="Use this tool for troubleshooting." --image=$HOME/xero.png  \
---field="<b>Apply Arch GPG Keys Fix</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/keyfix'" \
---field="<b>Enable Wayland Session</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/xway'" \
+--field="<b>Fix Arch GnuPG Keys Issue</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/keyfix'" \
+--field="<b>Re-Enable Wayland Session</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/xway'" \
+--field="<b>Get Faster Update Mirrors</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/ram'" \
+--field="<b>Reset Settings to Defaults</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/freset'" \
 --button=Back:1
