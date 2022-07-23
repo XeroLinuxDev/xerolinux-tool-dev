@@ -17,11 +17,9 @@ tput sgr0
 echo
 echo "Select an Action to Execute"
 echo
-echo "1. Install/Run ArcoLinux Spices Tool"
-echo "2. Install/Run ArchLinux Tweak Tool"
-echo "   (Enable Arco Repos via Spices 1st)"
-echo "3. Report issues on ArcoLinux Server"
-echo "4. Nothing/Exit"
+echo "1. Install/Run ArchLinux Tweak Tool"
+echo "2. Report issues on ArcoLinux Server"
+echo "3. Nothing/Exit"
 echo
 echo "Type Your Selection..."
 echo
@@ -33,27 +31,10 @@ case $CHOICE in
     1 )
       echo
       echo "##########################################"
-      echo "      Installing/Running Spices Tool      "
-      echo "     Press the BIG button to install.     "
-      echo "##########################################"
-			sleep 3
-			sudo pacman -Sy --noconfirm arcolinux-spices-git
-			sleep 3
-			arcolinux-spices
-      echo "#######################################"
-      echo "All Done, Now Select Step 2 to Continue"
-      echo "#######################################"
-      clear && sh /usr/local/bin/data/arcotoolz
-
-      ;;
-
-    2 )
-      echo
-      echo "##########################################"
       echo "      Installing/Running Tweak Tool       "
       echo "##########################################"
 			sleep 3
-			sudo pacman -Sy --noconfirm archlinux-tweak-tool-git
+			yay -Sy --noconfirm archlinux-tweak-tool-git
 			sleep 3
 			archlinux-tweak-tool
       echo "##########################################"
@@ -63,7 +44,7 @@ case $CHOICE in
 
       ;;
 
-    3 )
+    2 )
       echo
       echo "##########################################"
       echo "   Opening Browser To ArcoLinux Discord   "
@@ -77,7 +58,7 @@ case $CHOICE in
 
       ;;
 
-    4 )
+    3 )
       echo
       echo "########################################"
       echo "   We did nothing as per your request   "
